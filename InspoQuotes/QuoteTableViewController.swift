@@ -100,6 +100,7 @@ class QuoteTableViewController: UITableViewController, SKPaymentTransactionObser
         UserDefaults.standard.set(true, forKey: productId)
         quotesToShow.append(contentsOf: premiumQuotes)
         buyPremium = 0
+        navigationItem.setRightBarButton(nil, animated: true)
         tableView.reloadData()
     }
     
